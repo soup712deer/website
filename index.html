@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- ヘッド -->
+  <head>
+    <meta charset="UTF-8">
+    <title>バーチャルの旅人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <!-- ボディ -->
+  <body>
+    <!-- ロードアニメーション -->
+    <div id="loader">
+      <div class="loader-name" id="loader-time"></div>
+      <div class="loader-line"></div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+    </div>
+
+    <!-- カーソル変更 -->
+    <div id="cursor" class="cursor"></div>
+
+    <!-- ホロマスク効果 -->
+    <div class="holo-mask"></div>
+
+    <!-- ナビゲーション -->
+    <nav>
+      <h4 class="nav-logo">
+        <a>SOUP</a>
+        <span class="nav-logo-change-color"><a>712</a></span>
+        <span class="nav-logo-transparent"><a>DEER</a></span>
+      </h4>
+      <ul>
+        <li><a href="hobby.html">趣味</a></li>
+        <li><a href="library.html">ライブラリー</a></li>
+        <li><a href="social.html">ソーシャル</a></li>
+      </ul>
+    </nav>
+
+    <!-- ヒーロータイトル -->
+    <h1 class="hero-title">
+      SOUP<br>
+      <span class="hero-title-change-color">712</span><br>
+      <span class="hero-title-transparent">DEER</span>
+    </h1>
+
+    <hr>
+
+    <!-- 自己紹介 -->
+    <div class="main">
+      <article>
+        <section>
+          <div class="profile-container">
+            <div class="profile-text">
+              <!-- プロフィールタイトル -->
+              <h2 class="section-title">PROFILE</h2>
+              <!-- プロフィール内容 -->
+              <p class="section-description">
+                18歳　長野県在住の青木　一希です。<br>
+                主にAIや機械学習に興味があります。<br>
+                普段からはほとんど毎日インターネットの海やバーチャル空間で過ごしています。<br>
+                X(旧Twitter)やDiscordなどのSNSやVRchatといったゲームで色んな人と交流しています。
+              </p>
+            </div>
+            <!-- プロフィール画像 -->
+            <img class="profile-image" src="img/nRR_17DL_400x400.jpg" alt="プロフィール画像">
+          </div>
+
+          <hr>
+          
+          <!-- スライドショー -->
+          <div class="slideshow">
+            <h2 class="slideshow-title">VRchatの写真</h2>
+          </div>
+          <ul class="slideshow-slide">
+            <li><img src="img/GvoSfJ-X0AAJS4f.jpg" alt="スライドショー画像1"></li>
+            <li><img src="img/HD3O8R5boAILoFF.jpg" alt="スライドショー画像2"></li>
+            <li><img src="img/HHYb74rbQAAIA9D.jpg" alt="スライドショー画像3"></li>
+            <li><img src="img/HISSP7vbAAA9JqK.jpg" alt="スライドショー画像4"></li>
+            <li><img src="img/Gte13dpbwAAD3N7.jpg" alt="スライドショー画像5"></li>
+            <li><img src="img/GtprEUIbwAAEEWQ.jpg" alt="スライドショー画像6"></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/index.js"></script>
+  </body>
+<!-- ホログラフィック背景canvas: bodyのmargin外側に表示 -->
+<canvas id="holo-bg"></canvas>
+</html>
