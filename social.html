@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- ヘッド -->
+  <head>
+    <meta charset="UTF-8">
+    <title>バーチャルの旅人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <!-- ボディ -->
+  <body>
+    <!-- ロードアニメーション -->
+    <div id="loader">
+      <div class="loader-name" id="loader-time"></div>
+      <div class="loader-line"></div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+    </div>
+
+    <!-- カーソル変更 -->
+    <div id="cursor" class="cursor"></div>
+
+    <!-- ホロマスク効果 -->
+    <div class="holo-mask"></div>
+
+    <!-- ナビゲーション -->
+    <nav>
+      <h4 class="nav-logo">
+        <a href="index.html">SOUP</a>
+        <span class="nav-logo-change-color"><a href="index.html">712</a></span>
+        <span class="nav-logo-transparent"><a href="index.html">DEER</a></span>
+      </h4>
+      <ul>
+        <li><a href="hobby.html">趣味</a></li>
+        <li><a href="library.html">ライブラリー</a></li>
+        <li><a class="active" >ソーシャル</a></li>
+      </ul>
+    </nav>
+
+    <!-- ヒーロータイトル -->
+    <h1 class="hobby-title">
+      趣味<br>
+      <!-- <span class="hero-title-change-color">712</span><br>
+      <span class="hero-title-transparent">DEER</span> -->
+    </h1>
+
+    <hr>
+
+    <!-- 自己紹介 -->
+    <div class="main">
+      <article>
+        <section>
+          <div class="profile-container">
+            <div class="profile-text">
+              <!-- タイトル -->
+              <h2 class="section-title">ソーシャルメディア</h2>
+              <!-- 内容 -->
+              <p class="section-nonborder">
+                <ul>X（旧Twitter）
+                  <blockquote class="twitter-tweet" data-theme="dark"><p lang="qme" dir="ltr"><a href="https://twitter.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://t.co/y7hUItJ9YO">pic.twitter.com/y7hUItJ9YO</a></p>&mdash; soup712deer (@soup712deer) <a href="https://twitter.com/soup712deer/status/2029077991494738164?ref_src=twsrc%5Etfw">March 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                
+                  <hr>
+                </ul>
+                <ul>VRchat </ul>
+                  <object type="image/svg+xml" data="https://vrc.dissonant.dev/usr_8d7c9c19-9d0a-4c98-ac81-57acaf15bc3a/large.svg?width=350&logo=big&foreground_color=CEA0DE" width="350" height="350" title="My VRChat status" style="color-scheme: light;">
+                  <img src="https://vrc.dissonant.dev/usr_8d7c9c19-9d0a-4c98-ac81-57acaf15bc3a/large.png?width=350&logo=big&foreground_color=CEA0DE" width="350" height="350" title="My VRChat status"/>
+                  </object>
+               
+                <!--
+                ・ツイッターアカウント
+                
+                ・youtubeアカウント
+
+                ・Discordアカウント
+
+
+                 -->
+              </p>
+            </div>
+         </section>
+      </article>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/social.js"></script>
+  </body>
+<!-- ホログラフィック背景canvas: bodyのmargin外側に表示 -->
+<canvas id="holo-bg"></canvas>
+</html>

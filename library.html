@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- ヘッド -->
+  <head>
+    <meta charset="UTF-8">
+    <title>バーチャルの旅人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <!-- ボディ -->
+  <body>
+    <!-- ロードアニメーション -->
+    <div id="loader">
+      <div class="loader-name" id="loader-time"></div>
+      <div class="loader-line"></div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+    </div>
+
+    <!-- カーソル変更 -->
+    <div id="cursor" class="cursor"></div>
+
+    <!-- ホロマスク効果 -->
+    <div class="holo-mask"></div>
+
+    <!-- ナビゲーション -->
+    <nav>
+      <h4 class="nav-logo">
+        <a href="index.html">SOUP</a>
+        <span class="nav-logo-change-color"><a href="index.html">712</a></span>
+        <span class="nav-logo-transparent"><a href="index.html">DEER</a></span>
+      </h4>
+      <ul>
+        <li><a href="hobby.html">趣味</a></li>
+        <li><a class="active">ライブラリー</a></li>
+        <li><a href="social.html">ソーシャル</a></li>
+      </ul>
+    </nav>
+
+    <!-- ヒーロータイトル -->
+    <h1 class="hobby-title">
+      趣味<br>
+      <!-- <span class="hero-title-change-color">712</span><br>
+      <span class="hero-title-transparent">DEER</span> -->
+    </h1>
+
+    <hr>
+
+    <!-- 自己紹介 -->
+    <div class="main">
+      <article>
+        <section>
+          <div class="profile-container">
+            <div class="profile-text">
+              <!-- タイトル -->
+              <h2 class="section-title">色々な埋め込みコード（試しに）</h2>
+              <!-- 内容 -->
+              <p class="section-nonborder">
+                <div class="cs-wapper">
+                <ul>X(twitter)</ul>
+                <div class="iframe-overlay-wrap">
+                  <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">やっと暇な時間ができたよ<br>久しぶりにFLX４を触ってみた <a href="https://t.co/H7kuqY0VGF">pic.twitter.com/H7kuqY0VGF</a></p>&mdash; soup712deer (@soup712deer) <a href="https://twitter.com/soup712deer/status/2058542915773993340?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">ダブルドロップ？っていうテクニックを練習してみた！ <a href="https://t.co/zeh0ZeU91z">pic.twitter.com/zeh0ZeU91z</a></p>&mdash; soup712deer (@soup712deer) <a href="https://twitter.com/soup712deer/status/2056382144063398089?ref_src=twsrc%5Etfw">May 18, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <ul>好きなゲーム</ul>
+                <div class="iframe-overlay-wrap">
+                  <iframe src="https://store.steampowered.com/widget/730/?l=japanese" frameborder="0" width="646" height="190" &l="ja"></iframe>
+                  <iframe src="https://store.steampowered.com/widget/438100/?l=japanese" frameborder="0" width="646" height="190"></iframe>
+                  <iframe src="https://store.steampowered.com/widget/287700/?l=japanese" frameborder="0" width="646" height="190"></iframe>
+                  <iframe src="https://store.steampowered.com/widget/1091500/?l=japanese" frameborder="0" width="646" height="190"></iframe>
+                  <div class="iframe-overlay"></div>
+                </div>
+                <ul>好きな音楽</ul>
+                <div class="iframe-overlay-wrap">
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4XZC1labZABgXtbAag1eWo?utm_source=generator" lang="japanese" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4AiNqTrXLAKYCWsks5vlZx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6kIivltIxJscvk682sTXoV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0FXEclPDVfUNHYDiyAPXYP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0jozSNmRCcQvIzuae6xQ78?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                   <div class="iframe-overlay"></div>
+                </div>
+                </div>  
+                <!-- 
+                ・埋め込みコード1
+                　これは好きゲームですこれは好きゲームですこれは好きゲームです
+                　これは好きゲームですこれは好きゲームです
+
+                ・埋め込みコード2
+                　これは好きな音楽これは好きな音楽これは好きな音楽これは好きな音楽
+                　これは好きな音楽これは好きな音楽
+
+                ・埋め込みコード3
+                　これは好きなアーティストこれは好きなアーティストこれは好きなアーティスト
+                これは好きなアーティストこれは好きなアーティスト
+
+                ・埋め込みコード4
+                　これは実際にDJをした時の動画これは実際にDJをした時の動画
+                　これは実際にDJをした時の動画
+                       -->
+              </p>
+            </div>
+         </section>
+      </article>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/library.js"></script>
+  </body>
+<!-- ホログラフィック背景canvas: bodyのmargin外側に表示 -->
+<canvas id="holo-bg"></canvas>
+</html>

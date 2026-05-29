@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- ヘッド -->
+  <head>
+    <meta charset="UTF-8">
+    <title>バーチャルの旅人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <!-- ボディ -->
+  <body>
+    <!-- ロードアニメーション -->
+    <div id="loader">
+      <div class="loader-name" id="loader-time"></div>
+      <div class="loader-line"></div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+    </div>
+
+    <!-- カーソル変更 -->
+    <div id="cursor" class="cursor"></div>
+
+    <!-- ホロマスク効果 -->
+    <div class="holo-mask"></div>
+
+    <!-- ナビゲーション -->
+    <nav>
+      <h4 class="nav-logo">
+        <a href="index.html">SOUP</a>
+        <span class="nav-logo-change-color"><a href="index.html">712</a></span>
+        <span class="nav-logo-transparent"><a href="index.html">DEER</a></span>
+      </h4>
+      <ul>
+        <li><a class="active">趣味</a></li>
+        <li><a href="library.html">ライブラリー</a></li>
+        <li><a href="social.html">ソーシャル</a></li>
+      </ul>
+    </nav>
+
+    <!-- ヒーロータイトル -->
+    <h1 class="hobby-title">
+      趣味<br>
+      <!-- <span class="hero-title-change-color">712</span><br>
+      <span class="hero-title-transparent">DEER</span> -->
+    </h1>
+
+    <hr>
+
+    <!-- 自己紹介 -->
+    <div class="main">
+      <article>
+        <section>
+          <div class="profile-container">
+            <div class="profile-text">
+              <!-- タイトル -->
+              <h2 class="section-title">趣味</h2>
+              <!-- 内容 -->
+              <p class="section-nonborder">
+                <ul class="hobby-ul-title">
+                  <li>音楽</li>
+                  <p>>さまざまなジャンルの音楽を聴くことが好きで、その日の気分や場面によって聴く曲を変えています。<span>特にDubstepやTrapのような、重低音が強く使われている迫力のある楽曲が好きで<span>深く響くベースや独特なリズム、音の展開に魅力を感じています。<span>激しいサウンドの中にも細かな音作りや表現があり、聴いているだけで気分が高まったり、集中力が上がったりするところが好きです。
+                  </p>
+                  <li>ディスクジョッキー(DJ)</li>
+                  <p>>自分の好きな音楽をタイミングよく混合し、聴いている人たちを楽しませることに魅力を感じています。曲のつなぎ方や流れを工夫し、会場の雰囲気を盛り上げられるよう意識しています。特にDubstepやTrapなどの重低音の強い曲を使ったミックスが好きで、音楽を通して人を楽しませることにやりがいを感じています。</p>
+                  <li>ゲーム</li>
+                  <p>>さまざまなジャンルのゲームをプレイしていますが、特にFPS（First-person shooter）やVRChatのような、人とコミュニケーションを取りながら遊ぶゲームが好きです。FPSでは、素早い判断力や仲間との連携が重要で、協力して勝利を目指すところに魅力を感じています。VRChatでは、世界中のさまざまな人と交流でき、実際に同じ空間にいるような感覚で会話や遊びを楽しめるところが面白いと思います。
+                  </p>
+                </ul>
+                <!-- こんな感じに書く
+                      内容は後で考える
+                ・趣味１
+                  理由をかく理由をかく理由をかく理由をかく理由をかく
+                  理由をかく理由をかく理由をかく理由をかく
+                
+                ・趣味2
+                  理由をかく理由をかく理由をかく理由をかく理由をかく
+                  理由をかく理由をかく理由をかく理由をかく
+
+                ・趣味3
+                　理由をかく理由をかく理由をかく理由をかく理由をかく
+                　理由をかく理由をかく理由をかく理由をかく
+                
+                
+                
+                
+                
+                -->
+              </p>
+            </div>
+         </section>
+      </article>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/hobbys.js"></script>
+  </body>
+<!-- ホログラフィック背景canvas: bodyのmargin外側に表示 -->
+<canvas id="holo-bg"></canvas>
+</html>
